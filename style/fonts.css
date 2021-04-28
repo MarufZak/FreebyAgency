@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'OS-B';
+    src: url('../fonts/OpenSans/OpenSans-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'OS-R';
+    src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'OS-L';
+    src: url('../fonts/OpenSans/OpenSans-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'OD-B';
+    src: url('../fonts/Oswald/Oswald-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'OD-R';
+    src: url('../fonts/Oswald/Oswald-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'OD-L';
+    src: url('../fonts/Oswald/Oswald-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'OD-L';
+    src: url('../fonts/Oswald/Oswald-Medium.ttf.ttf');
+    font-weight: 500;
+}
