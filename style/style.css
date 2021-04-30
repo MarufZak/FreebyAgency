@@ -21,6 +21,7 @@ ul {
     --titleLight: rgba(80, 78, 78, 1);
     --text: rgba(91, 88, 88, 1);
     --link: rgba(37, 37, 37, 1);
+    
 
     --col-1: calc(100%/12);
     --col-2: calc(100%/12*2);
@@ -210,7 +211,94 @@ ul {
 }
 
 
+/* ========================================= */
+/* ========================================= */
+/* ========================================= */
 
-main {
-    min-height: 100vh;
+.start {
+    padding: 120px 0;
+}
+
+.start__card-img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.start__card-content-1 {
+    position: absolute;
+    top: 30%;
+    left: -50%;
+    width: 320px;
+}
+
+.start__title {
+    font-family: "OD-B";
+    line-height: 54px;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--title);
+}
+
+.start__text {
+    color: var(--text);
+    font-size: 15px;
+    line-height: 25px;
+    font-family: "OS-L";
+    display: flex;
+}
+
+.start__text::before {
+    content: '';
+    display: block;
+    min-width: 20px;
+    height: 2px;
+    background: var(--title);
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.start__title span {
+    font-family: "OD-L";
+    font-weight: 300;
+    letter-spacing: 10px;
+}
+
+.start__card-content-2 {
+    position: absolute;
+    top: 50%;
+    right: -65%;
+    width: 280px;
+}
+
+.start__cards {
+    display: grid;
+    grid-template: repeat(8, 60px) / 2fr 3fr 3fr 3fr 2fr;
+    position: relative;
+}
+
+.start__card-1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 7;
+    position: absolute;
+    left: 20px;
+    z-index: 3;
+}
+
+.start__card-2 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 8;
+    width: 300px;
+    height: 400px;
+    background: var(--green);
+    opacity: 0.7;
+    z-index: 2;
+}
+
+.start__card-3 {
+    grid-column: 4 / 5;
+    grid-row: 3 / 9;
+    position: absolute;
+    right: 25px;
+    z-index: 1;
 }
