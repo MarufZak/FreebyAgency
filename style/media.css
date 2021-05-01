@@ -80,15 +80,26 @@
         content: '';
         width: 20px;
         height: 2px;
-        display: inline-block;
         position: absolute;
         background: var(--white);
+        transition: 0.5s;
     }
     .header__burger::before {
         top: 0;
     }
     .header__burger::after {
         bottom: 0;
+    }
+    .header__burger.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__burger.active span {
+        display: none;
     }
     .header__burger span {
         content: '';

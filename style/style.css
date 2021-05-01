@@ -60,16 +60,34 @@ ul {
     width: 100%;
     top: 0;
     z-index: 999;
+    padding: 50px 0 0 0;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--title);
+    transform: scaleY(0);
+    transition: 0.2s;
+    transform-origin: top;
+}
+
+.header.active::before {
+    transform: scaleY(1);
 }
 
 .header__nav {
-    padding-top: 50px;
     background: transparent;
 }
 
 .header__list {
     display: flex;
     justify-content: flex-end;
+    transition: 0.1s;
 }
 
 .header__link {
