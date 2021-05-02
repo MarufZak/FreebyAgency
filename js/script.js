@@ -36,3 +36,8 @@ window.addEventListener('scroll',function () {
         })
     }
 })
+
+$('.work__link').click(function (item) {  
+    $('.work__link').removeClass('active')
+    $(this).addClass('active')
+})
