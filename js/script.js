@@ -23,7 +23,7 @@ $('.header__burger').click(function () {
 console.log(window.pageYOffset);
 
 window.addEventListener('scroll',function () {  
-    if (window.pageYOffset > 400) {
+    if (window.pageYOffset > 20) {
         $('.header').addClass('active');
         $('.header__list').css({
             transform: 'translateY(-25px)'
