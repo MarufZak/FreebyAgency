@@ -41,3 +41,18 @@ $('.work__link').click(function (item) {
     $('.work__link').removeClass('active')
     $(this).addClass('active')
 })
+
+
+$('.comment__body').slick({
+    draggable: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+        {
+            breakpoint: 325,
+            settings: {
+                arrows: false
+            }
+        }
+    ]
+});
