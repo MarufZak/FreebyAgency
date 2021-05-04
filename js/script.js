@@ -44,7 +44,7 @@ $('.work__link').click(function (item) {
 
 
 $('.comment__body').slick({
-    draggable: false,
+    draggable: true,
     autoplay: true,
     autoplaySpeed: 3000,
     responsive: [

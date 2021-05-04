@@ -888,8 +888,58 @@ ul {
     color: var(--grey);
 }
 
+.comment-stars {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+}
 
+.comment-stars::before {
+    content: '★★★★★';
+    display: block;
+}
 
+.comment-stars__items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.comment-stars__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.comment-stars__label {
+    height: 100%;
+}
+
+.comment-stars__label::before {
+    content: '★';
+    display: inline-block;
+}
+
+.comment-stars__label:hover,
+.comment-stars__label:hover ~ .comment-stars__label,
+.comment-stars__label:checked ~ .comment-stars__label {
+    color: #ffef9f;
+}
+
+.comment-stars__item:checked,
+.comment-stars__item:checked ~ .comment-stars__label {
+    color: #ffd300;
+}
 
 /* ======================================== */
 /* ======================================== */
@@ -1024,3 +1074,4 @@ ul {
     color: var(--white);
     opacity: 0.4;
 }
+
