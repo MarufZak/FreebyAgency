@@ -162,6 +162,10 @@ ul {
     text-align: center;
 }
 
+.slick-slide:active, .slick-slide:focus {
+    outline: none;
+}
+
 .slider .slick-list {
     overflow: hidden;
 }
